@@ -1,73 +1,42 @@
 # E-Commerce Revenue Prediction — Linear Regression
 
-Project Overview
+Project Overview-
 
-This project analyzes purchase behavior in an online retail setting where customers first receive in-store styling sessions and later place their orders through either the mobile app or the website. The business objective is to determine which digital channel has a stronger influence on revenue so the company can prioritize product development, UX enhancements, and marketing investment.
+This project explores customer purchasing behavior in an online retail setup where users first experience in-store styling sessions and then place orders through either the mobile app or the website. The aim is to identify which digital channel influences revenue more strongly and help guide decisions around UX upgrades, product enhancements, and marketing investment.
 
-Business Problem
+Business Problem-
 
-The company needs clarity on:
+The analysis focuses on understanding which platform drives more revenue 📱💻, which engagement factors affect customer spending the most, and how classical regression modeling can support strategic optimization of digital channels.
 
-Whether mobile app or website engagement contributes more to revenue.
-Which engagement metrics are the strongest predictors of customer spend.
-How classical regression modeling can support strategic decision-making for digital channel optimization.
+Dataset-
 
-Dataset
+The model uses key customer engagement and behavior features:
+Avg. Session Length ⏱️ represents the average duration of a customer’s styling session experience, Time on App 📱 measures engagement within the mobile application, Time on Website 💻 captures browsing behavior on the web platform, and Length of Membership 🎯 reflects customer loyalty and long-term association.
 
-The dataset contains customer behavior and transaction features, including:
-Time spent on the mobile app
-Time spent on the website
-Average session length
-Length of membership
+Approach-
 
-If the dataset cannot be shared publicly due to confidentiality, it has been excluded from this repository.
+The project follows a structured machine-learning workflow covering data loading, cleaning, exploratory analysis, feature selection, model building using multiple linear regression in Python, evaluation of performance metrics, and interpretation of business outcomes.
 
-Approach
+Model Development-
 
-The project follows a structured workflow:
+A regression model was developed in Python by splitting data into train and test sets, fitting the model, checking statistical assumptions such as residual distribution and multicollinearity, and computing predictive accuracy using R², MAE, and RMSE. Diagnostic plots and statistical summaries were generated to validate the model.
 
-Data loading and inspection
-Cleaning and handling missing values
-Exploratory data analysis
-Feature selection and engineering
-Multiple linear regression modeling using scikit-learn
-Model evaluation and interpretation
-Business insights and conclusions
+Evaluation Metrics-
 
-Model Development
+Performance assessment included measuring the proportion of variance explained by the model (R²), average prediction error (MAE), and error magnitude with higher penalty (RMSE). These metrics were complemented with visual diagnostics to confirm model reliability.
 
-A multiple linear regression model was implemented in Python.
-Key steps included:
+Key Insights-
 
-Train–test splitting
-Fitting the regression model
-Checking assumptions such as residual distribution and multicollinearity
-Generating evaluation metrics (R², MAE, RMSE)
+Customer engagement through the mobile app showed a stronger positive impact on revenue compared to website usage. Improving the mobile experience is more likely to yield faster business returns. The interpretability of classical regression made the results actionable and directly relevant to decision-makers.
 
-Evaluation Metrics
+Tools & Technologies-
 
-The model was assessed using:
+Python served as the backbone of the project, supported by libraries such as Pandas, NumPy, Matplotlib, Seaborn, scikit-learn, and statsmodels, executed in notebooks running on Jupyter or Google Colab environments.
 
-R²: Measures the percentage of variance explained
-MAE: Average magnitude of prediction error
-RMSE: Penalizes larger errors more strongly
+Reproducibility-
 
-Residual and diagnostic plots were also generated to validate model assumptions.
+Dependencies can be installed using
 
-Key Insights
+pip install -r requirements.txt
 
-Engagement on the mobile app showed a stronger positive relationship with revenue than website usage.
-Improving the mobile experience may yield higher short-term ROI in terms of customer spending.
-Classical regression still provides clear interpretability and reliable direction when combined with proper feature validation.
-
-Tools & Technologies:
-
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-scikit-learn
-statsmodels
-
-Jupyter/Colab Notebook
+The notebook can be executed in Jupyter Notebook, Google Colab, or VS Code with Jupyter support.
