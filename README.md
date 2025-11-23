@@ -38,6 +38,6 @@ Dependencies can be installed using
 
 pip install -r requirements.txt
 
-The notebook can be executed in Jupyter Notebook, Google Colab, or VS Code with Jupyter support
+The notebook can be executed in Jupyter Notebook, Google Colab, or VS Code with Jupyter support.
 
 
